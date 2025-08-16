@@ -1,0 +1,5 @@
+all:
+	gcc -shared -fPIC -o libisPE.so lib/isPE.c
+
+clean:
+	rm -f libisPE.so

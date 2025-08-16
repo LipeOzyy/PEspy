@@ -1,0 +1,10 @@
+all: 
+	gcc -shared -fPIC -o libisPE.so lib/isPE.c
+
+clean:
+	rm -f libisPE.so
+
+install:
+	install -m 0644 libisPE.so /usr/local/lib/
+unistall:
+	rm -f /usr/local/lib/libisPE.so
